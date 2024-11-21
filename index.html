@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <title>A G E N T</title>
+</head>
+<body>
+    <div class="container">
+    <script>
+        function spark(event){
+             let i = document.createElement('i');
+             i.style.left = (event.pageX) + 'px';
+             i.style.top = (event.pageY) + 'px';
+             i.style.scale ='${Math.random() * 2 + 1}';
+
+             document.body.appendChild(i);
+
+             setTimeout(() => {
+                document.body.removeChild(i);
+             },2000)
+        }
+        document.addEventListener('mousemove', spark);
+    </script>
+    <a  href="video2.html">[ENTER]</a>
+</div>
+
+</body>
+</html>
